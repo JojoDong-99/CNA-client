@@ -66,7 +66,7 @@ function loadNotes() {
     return (
       <div className="lander">
         <div><img src="./logo-home.png" alt="" height="300px"/></div>
-        <h1>Cloud Note App</h1>
+        <h1><span className={"highlight"}>C</span>loud <span className={"highlight"}>N</span>ote <span className={"highlight"}>A</span>pp</h1>
         <p>Jojo's first AWS serverless web application</p>
       </div>
     );
@@ -74,8 +74,8 @@ function loadNotes() {
 
   function renderNotes() {
     return (
-      <div className="notes">
-        <h2 className="pb-3 mt-4 mb-3 border-bottom">Your Notes</h2>
+      <div className="pb-3 mt-4 mb-3 border-bottom">
+        <h2>Your Notes</h2>
         <ListGroup>{!isLoading && renderNotesList(notes)}</ListGroup>
       </div>
     );

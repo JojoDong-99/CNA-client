@@ -1,2 +1,7 @@
 .App {
+  margin-top: 15px;
+}
+
+.btn[disabled]:hover {
+  background-color: #258fc4;
 }

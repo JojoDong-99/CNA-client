@@ -97,7 +97,7 @@ export default function Signup() {
   function renderForm() {
     return (
       <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="email" size="lg">
+        <Form.Group controlId="email" size="large">
           <Form.Label>Email</Form.Label>
           <Form.Control
             autoFocus
@@ -113,6 +113,15 @@ export default function Signup() {
             value={fields.password}
             onChange={handleFieldChange}
           />
+          <div className="password-requirements">
+               Password Requirements:
+               <ul>
+                  <li>At least 8 characters</li>
+                  <li>A mixture of both uppercase and lowercase letters</li>
+                  <li>A mixture of letters and numbers</li>
+                  <li>Inclusion of at least one special character, e.g., ! @ # ?</li>
+               </ul>
+          </div>
         </Form.Group>
         <Form.Group controlId="confirmPassword" size="lg">
           <Form.Label>Confirm Password</Form.Label>
@@ -121,6 +130,7 @@ export default function Signup() {
             onChange={handleFieldChange}
             value={fields.confirmPassword}
           />
+    
         </Form.Group>
         <LoaderButton
           block

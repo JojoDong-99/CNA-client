@@ -8,3 +8,8 @@
     max-width: 320px;
   }
 }
+
+.password-requirements{
+    font-size: 0.9rem;
+    color: #258fc4;
+}
