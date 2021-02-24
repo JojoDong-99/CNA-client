@@ -2,3 +2,10 @@
   height: 300px;
   font-size: 1.5rem;
 }
+
+
+
+.Notes {
+    position: relative;
+    top: 35px;
+}
